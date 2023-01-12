@@ -1,0 +1,12 @@
+<a href="/login">Login</a>
+<br>
+<a href="/logout">Logout</a>
+
+<br>
+LoggedIn: <%= oidc.isAuthenticated() %>
+
+    <br>
+    Name: <%= oidc?.user?.given_name %>
+        <%= oidc?.user?.family_name %>
+            <br>
+            Email: <%= oidc?.user?.email %>
